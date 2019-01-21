@@ -8,6 +8,7 @@ module.exports = {
   },
   extends: ["airbnb-base", "plugin:import/errors", "plugin:import/warnings"],
   env: {
+    browser: true,
     node: true,
     jest: true,
   },

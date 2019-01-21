@@ -1,16 +1,8 @@
-const model = {
-  meals: [{ id: 1, name: "Breakfast", calories: 460 }],
-  showForm: false,
-  description: "Dinner",
-  calories: 600,
-  editId: 0,
-  nextId: 1,
-};
+import initModel from "./Model";
+import update from "./Update";
+import view from "./View";
+import app from "./App";
 
-const MSGS = {
+const node = document.getElementById("app");
 
-};
-
-function view() {
-
-}
+app(initModel, update, view, node);
