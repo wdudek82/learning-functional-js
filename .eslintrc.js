@@ -1,48 +1,48 @@
 module.exports = {
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       node: {
-        extensions: [".js", ".ts"],
+        extensions: ['.js', '.ts'],
       },
     },
   },
-  extends: ["airbnb-base", "plugin:import/errors", "plugin:import/warnings"],
+  extends: ['airbnb-base', 'plugin:import/errors', 'plugin:import/warnings'],
   env: {
     browser: true,
     node: true,
     jest: true,
   },
   rules: {
-    quotes: ["error", "double", { avoidEscape: true }],
-    "no-restricted-syntax": [0, "ForInStatement", "ForOfStatement"],
-    "arrow-body-style": 0,
-    "comma-dangle": [
-      "warn",
+    quotes: ['error', 'single', { avoidEscape: true }],
+    'no-restricted-syntax': [0, 'ForInStatement', 'ForOfStatement'],
+    'arrow-body-style': 0,
+    'comma-dangle': [
+      'warn',
       {
-        arrays: "always-multiline",
-        objects: "always-multiline",
-        imports: "always-multiline",
-        exports: "always-multiline",
-        functions: "ignore",
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'ignore',
       },
     ],
-    "arrow-parens": ["error", "always"],
-    "space-before-function-paren": 0,
-    "function-paren-newline": ["error", "consistent"],
-    "no-unused-vars": [
-      "error",
+    'arrow-parens': ['error', 'always'],
+    'space-before-function-paren': 0,
+    'function-paren-newline': ['error', 'consistent'],
+    'no-unused-vars': [
+      'error',
       {
-        vars: "all",
-        args: "none",
+        vars: 'all',
+        args: 'none',
         ignoreRestSiblings: false,
-        caughtErrors: "all",
+        caughtErrors: 'all',
       },
     ],
-    "no-unused-expressions": ["error", { allowTaggedTemplates: true }],
-    "no-underscore-dangle": 0,
-    "object-curly-newline": ["error", { consistent: true }],
-    "operator-linebreak": 0,
-    "implicit-arrow-linebreak": 0,
-    "no-confusing-arrow": 0,
+    'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
+    'no-underscore-dangle': 0,
+    'object-curly-newline': ['error', { consistent: true }],
+    'operator-linebreak': 0,
+    'implicit-arrow-linebreak': 0,
+    'no-confusing-arrow': 0,
   },
 };
